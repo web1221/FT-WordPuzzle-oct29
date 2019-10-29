@@ -11,6 +11,7 @@ $(document).ready(function(){
     console.log(sentence);
     const vowels = ["a", "e", "i", "o", "u"];
     var splitSentence = sentence.split("")
+
     console.log(splitSentence);
     // var finalSentence = splitSentence.forEach(function(letter, i){
     for(var i = 0; i<=splitSentence.length; i++){
@@ -22,5 +23,7 @@ $(document).ready(function(){
       console.log("else test");
     }
     }
+    var finalSentence = splitSentence.join("");
+    $('.result').append(finalSentence + '<br>');
   });
 });
