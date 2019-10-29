@@ -13,11 +13,12 @@ $(document).ready(function(){
     var splitSentence = sentence.split("")
     console.log(splitSentence);
     // var finalSentence = splitSentence.forEach(function(letter, i){
-    for(var i = 0; i<splitSentence.length; i++){
+    for(var i = 0; i<=splitSentence.length; i++){
       if (splitSentence[i] === "a" || splitSentence[i] === "e" || splitSentence[i] === "i" || splitSentence[i] === "o" || splitSentence[i] === "u"){
       console.log(splitSentence[i]);
-      return splitSentence[i].replace('-')
+      splitSentence[i] = ('-');
     } else {
+      splitSentence[i];
       console.log("else test");
     }
     }
